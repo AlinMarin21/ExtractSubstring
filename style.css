@@ -1,0 +1,231 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0rem;
+    padding: 0rem;
+    background-color: #FBF8F1;
+}
+
+.main-box {
+    margin-left: 12rem;
+    margin-right: 12rem;
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding-bottom: 5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.input-box {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-top: 5rem;
+    display: flex;
+}
+
+.input-box input {
+    flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.input-box input[type=text] {
+    border: 1px solid #F7ECDE;
+    border-radius: 8px;
+    background-color: rgba(233, 218, 193, 0.8);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.8rem;
+    color: #54BAB9;
+    font-size: 20px;
+}
+
+.input-box input[type=text]::placeholder {
+    color: #54BAB9;
+    opacity: 0.7;
+}
+
+
+.button-box {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-box button {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.check-button {
+    background-color: #54BAB9;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid #F7ECDE;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 3px 6px 0 rgba(187, 171, 171, 0.2), 0 3px 10px 0 rgba(187, 171, 171, 0.2);
+    cursor: pointer;
+    color: #F7ECDE;
+}
+
+.check-button i {
+    padding-right: 0.4rem;
+}
+
+.reset-button {
+    background-color: #54BAB9;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: 2px solid #F7ECDE;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: 0 3px 6px 0 rgba(187, 171, 171, 0.2), 0 3px 10px 0 rgba(187, 171, 171, 0.2);
+    cursor: pointer;
+    color: #F7ECDE;
+}
+
+.reset-button i {
+    padding-right: 0.4rem;
+}
+
+.response-box {
+    padding-top: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 18px;
+    color: #54BAB9;
+}
+
+.warning-message-notification {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid rgb(233, 218, 193);
+    border-radius: 8px;
+    background: rgba(233, 218, 193, 0.2);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    color: #54BAB9;
+    display: none;
+}
+
+@media screen and (max-width: 1199px)
+{
+    .main-box {
+        margin-left: 8rem;
+        margin-right: 8rem;
+    }
+    .input-box input[type=text] {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 0.7rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px)
+{
+    .main-box {
+        padding-bottom: 3rem;
+    }
+    .input-box input[type=text] {
+        font-size: 16px;
+    }
+    .input-box {
+        padding-left: 0.9rem;
+        padding-right: 0.9rem;
+        padding-top: 3rem;
+    }
+    .button-box {
+        margin-top: 3rem;
+    }
+    .check-button {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        font-size: 18px;
+    }
+    .reset-button {
+        padding-top: 0.2rem;
+        padding-bottom: 0.2rem;
+        padding-left: 0.4rem;
+        padding-right: 0.4rem;
+        font-size: 18px;
+    }
+    .response-box {
+        padding-top: 2.5rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .main-box {
+        margin-left: 4rem;
+        margin-right: 4rem;
+        margin-top: 7rem;
+    }
+    .input-box {
+        flex-direction: column;
+    }
+    .input-box input {
+        margin-bottom: 0.7rem;
+    }
+    .button-box {
+        margin-top: 2rem;
+    }
+    .warning-message-notification {
+        padding-top: 0.8rem;
+        padding-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .main-box {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 4rem;
+    }
+    .input-box input[type=text] {
+        padding-top: 0.6rem;
+        padding-bottom: 0.6rem;
+        padding-left: 0.6rem;
+        font-size: 14px;
+    }
+    .response-box {
+        font-size: 14px;
+    }
+    .check-button {
+        font-size: 16px;
+    }
+    .reset-button {
+        font-size: 16px;
+    }
+    .button-box button {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    .warning-message-notification {
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 12px;
+        left: 10px;
+    }
+}
